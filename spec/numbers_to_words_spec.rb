@@ -7,4 +7,8 @@ describe('NumConv#number_convert') do
     number = NumConv.new("1")
     expect(number.number_convert).to(eq("one"))
   end
+  it('takes 8 and puts "eight"') do
+    number = NumConv.new("8")
+    expect(number.number_convert).to(eq("eight"))
+  end
 end
