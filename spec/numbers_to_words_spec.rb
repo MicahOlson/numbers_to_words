@@ -15,4 +15,8 @@ describe('NumConv#number_convert') do
     number = NumConv.new("16")
     expect(number.number_convert).to(eq("sixteen"))
   end
+  it('takes 1652 and puts "one thousand six hundred fifty two"') do
+    number = NumConv.new("16")
+    expect(number.number_convert).to(eq("one thousand six hundred fifty two"))
+  end
 end
